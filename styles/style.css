@@ -1,0 +1,120 @@
+@charset 'UTF-8';
+
+/* CSS RESET STYLES */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ENTIRE DOCUMENT */
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5rem;
+}
+
+/* NAV SECTION */
+.nav-header {
+    padding: 1rem;
+}
+.title {
+    font-size: 1.8rem;
+    text-align: center;
+}
+.nav-list {
+    border: solid 1px black;
+    height: 14rem;
+    overflow-y: scroll;
+}
+.nav-list li {
+    padding: 0.875rem 1.875rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.nav-link {
+    text-decoration: none;
+}
+
+/* ARTICLES STYLES */
+.main-section {
+    padding: 1.25rem;
+}
+.section-header {
+    margin-bottom: 1rem;
+}
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.section-p, .section-list-item, .code-example {
+    margin: 1rem 0;
+    margin-left: 0.875rem;
+    color: #4D4E5E;
+    font-size: 0.96rem;
+}
+.section-list {
+    list-style-type: disc;
+    padding-left: 2.5rem;
+}
+.section-list-item {
+    margin: 15px 0 0 1.25rem;
+}
+.code-example {
+    background-color: #F7F7F7;
+    padding: 1rem 1rem;
+    margin: 1rem 1.5rem;
+    font-family: monospace;
+}
+
+/* MISCELLANOUS */
+.nav-link, .section-p, .section-list-item, .code-example {
+    color: #4D4E5E;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 56.25rem) {
+    #nav-bar {
+        border-right: 3px solid rgba(0, 22, 22, 0.4);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 20rem;
+    }
+    .nav-list {
+        height: 88%;
+    }
+
+    #main-doc {
+        margin-left: 22rem;
+    }
+}
